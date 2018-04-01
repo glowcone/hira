@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "la-hacks-2018-1522512705632",
+  "private_key_id": "314e3e17a20be3402f5ebc0e4c0448a07d0c110e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCtimy9I9Cd3DbG\npPFZCVmeU7U+f6fmTVZCFgZn1JaWoRdOTTuMHGQSw9GWoO8lkggbaQbq40b+vy2B\neN4ad/cyCYsbovHuUBVMW9znQkYIP2Cij/B9kIlFx0l+lcqo+DYdiKaa8kE2NCo3\n6S7hLG09BpD4HdNNFK7glNVOEMwxihPlHMrOOgD+r7IEyPEUUAzDHxtG8An92ya6\ngl+Lp6NFtgDeDMPmy0J/1cWLrK4HWW/3QEPnWUbViuG6Kh70RUZBAN0A4fK8SPRn\nTuQFRGSoZGCj4rgzStE3INK0vKjInXLc0LiFYv32Jej3bUEExlygiigRtWbJBG1I\nzAjrV17jAgMBAAECggEARZ/rV4kGekcvLMxhTjULoRN5fG0v+hyeFl6KzF6E2kMg\nPBiNYv3DAqpQrMu9lse7e+/LyDJOOgeOpMrO5TSrVwZwKrLZuKClouCaRKgYu9dd\nmGsCdAYopPe7G0/Soq8O2xOHsFOwaSRNqefimJG/9ANt5zXkICFDtjPQToU7v0W6\n6cKCyOT1h6N/yogJ4axudNH88aYL8ykKqh37XnAhWO6OPwUgoTRLehxM7FWB4o/5\nvt8pQLirpFqdRnTLJi4vJIsI3LOuCUL8s8Cizz0ezuOn0nCapRR/8KCT9kIbKEQD\nmxBbIu1gda1b0gU5pipMTZLGSo/vKxCSGSd3uxJ1pQKBgQDUsPv0P/+uWeJFrpTi\nMdgbghXTC3XyCaeX9GABLJOxjjNeSAGwMtTwjReFFsKtci0o0c4RY2mqS2kghSvh\n0k5ghNmkoFkeeVZUPvuR9t1dh4X+4PnpNDpGcZeL/BlbiQ2i8+VnN4dqBy3/A7l/\n1vzxzW6B/JLPQXYX/z5E02EBJwKBgQDQ4KBHwAa+7KpW3Pbi2vL35YacAutOQXzg\n0xs7a0cFzBf6R5057xnTkVqJpcprrkT9iXAwwRcQZ9GeiRlZLZ2Qbvokb1kIFo9a\n7jOfosnUsI56tGcy5y4hXaP8nYqQEcQCaTbPfO1vbAmB3ifI4F1a4L9rKk3s+s02\njrqqcqxR5QKBgQCeZlC+Twt0JazGiIaJDuYLVo46ZsaoQ1h1aqI1PaWhDm5jQO1A\n9BpyLCHgFFtYIThQti/p80e2dAMPHR7ZR27nowkT+fdlIqiQhXeF9XxXM58vew2k\nCCl+XQqoTk/0Q9XMDihC/q/y3vX6fiOgedRXoM80L46GnBH/PTB6wZH08QKBgDgi\ntlCyJd334suXdO6A412GHQgerLiKVxJhCeeNLDg9opAL4RBp1uoKHWfy25TW8Amn\nfzRLIHSzQh22QM67uKXRfX5/QlEvJvXMIKmdaVq03IXTqAyBHt+ut9yzRkLz01bG\nigl3TKRuR5vUZaLR0aUT073sT6cJvE8WSsp2KSOVAoGBAKTFKyZx7RqAdz4eEMCO\ng2PajScwGM3/RBLVWbERvxGSJPULo7LXE3+aXpANb9pe9kNjJYWQM5JobcqTSFXl\noZe+oaElTUrI0kj4gL/9oaKdjoAKKNWpTntQN0s4by+wPPsFxFpx8TPEhVe66bt9\n9l5UqN+eLgCKv4GKqov7EoRZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "hira-lahacks2018@la-hacks-2018-1522512705632.iam.gserviceaccount.com",
+  "client_id": "101129824638472832457",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hira-lahacks2018%40la-hacks-2018-1522512705632.iam.gserviceaccount.com"
+}
