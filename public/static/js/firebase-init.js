@@ -21,3 +21,7 @@ function writeData(title, transcript) {
 function readData() {
 	return database.ref('notes').once('value');
 }
+
+function readNote() {
+	return 
+}
