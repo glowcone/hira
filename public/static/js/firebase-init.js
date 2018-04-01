@@ -17,3 +17,7 @@ function writeData(title, transcript) {
 		transcript: transcript
   });
 }
+
+function readData() {
+	return database.ref('notes').once('value');
+}
