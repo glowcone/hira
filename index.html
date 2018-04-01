@@ -13,7 +13,7 @@
 				<div class="content col p-5 h-100">
 					<div class="row">
 						<h1 class="col">Welcome back, Cheeza.</h1>
-						<button class="col-2">Record a new note</button>
+						<button id = "newNote" class="col-2">Record a new note</button>
 					</div>
 					<div class="row">
 						<h3>Recent Notes</h3>
@@ -36,5 +36,10 @@
 
 			</div>
 		</div>
+		<script type="text/javascript">
+		   document.getElementById("newNote").onclick = function () {
+		       location.href = "./demo/index.html";
+		   };
+		</script>
 	</body>
 </html>
