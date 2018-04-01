@@ -1,3 +1,8 @@
+$("#push").click(function() {
+	console.log("clicked")
+	writeData($("#note-title").text(), $("#transcript").prop('outerHTML'))
+})
+
 //text edit
 
 $('#note-title').click(function() {
