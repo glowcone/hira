@@ -1,4 +1,6 @@
-readData().then((snapshot) => {
+var postKey;
+readData().on('value', (snapshot) => {
+		$("#notes-list").empty()
 	snapshot.forEach((child) => {
 		const key = child.key
 		const data = child.val()
@@ -13,9 +15,10 @@ readData().then((snapshot) => {
 			e.preventDefault()
 			localStorage.setItem('noteTitle', data.title)
 			localStorage.setItem('noteTranscript', data.transcript)
+			postKey = key
 			location.href = '/view-note'
 		})
 		card2.append(cardBody)
-		$("#notes-list").append($('<div class="p-2 col-sm-4"></div>').append(card2))
+		$("#notes-list").append($('<div class="p-2 col-md-4"></div>').append(card2))
 	})
 })

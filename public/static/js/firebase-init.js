@@ -9,7 +9,9 @@ const config = {
 firebase.initializeApp(config);
 const database = firebase.database();
 
-var postKey = firebase.database().ref().child('notes').push().key;
+if (!postKey) {
+  var postKey = firebase.database().ref().child('notes').push().key;
+}
 
 function writeData(title, transcript) {
 	console.log(title)
@@ -26,9 +28,5 @@ function writeData(title, transcript) {
 }
 
 function readData() {
-	return database.ref('notes').once('value');
-}
-
-function readNote() {
-	return 
+	return database.ref('notes');
 }
