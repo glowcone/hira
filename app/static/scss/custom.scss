@@ -1,0 +1,13 @@
+@import "./bootstrap/bootstrap";
+
+
+$primary: #2a3037;
+$secondary: #f8c51c;
+
+.highlight {
+	background-color: theme-color("secondary");
+}
+
+.interim {
+	color: gray;
+}
