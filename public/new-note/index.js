@@ -1,3 +1,4 @@
+
 $("#push").click(function() {
 	console.log("clicked")
 	writeData($("#note-title").text(), $("#transcript").prop('outerHTML'))
@@ -13,7 +14,7 @@ $('#note-title').click(function() {
 })
 
 $('#note-title').keydown(function(e) {
-	if(e.keyCode == 13) {	
+	if(e.keyCode == 13) {
 		$(this).blur()
 	}
 })
@@ -23,7 +24,7 @@ rangy.init()
 const highlighter = rangy.createHighlighter()
 highlighter.addClassApplier(rangy.createClassApplier('highlight', {
 	ignoreWhiteSpace: true,
-	elementTagName: 'span',	
+	elementTagName: 'span',
 	tagNames: ['span'],
 	elementProperties: {
 		onclick: function() {

@@ -9,11 +9,18 @@ const config = {
 firebase.initializeApp(config);
 const database = firebase.database();
 
+var postKey = firebase.database().ref().child('notes').push().key;
+
 function writeData(title, transcript) {
 	console.log(title)
 	console.log(transcript)
-  database.ref().child('notes').push({
-		title: title,
-		transcript: transcript
-  });
+	console.log(postKey)
+	var postData = {title: title, transcript: transcript};
+	var updates = {};
+	updates['/notes/' + postKey] = postData;
+	return firebase.database().ref().update(updates)
+  // database.ref().child('notes').update({
+	// 	title: title,
+	// 	transcript: transcript
+  // });
 }
