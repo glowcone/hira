@@ -29,6 +29,7 @@ var isFirst = true
 
 const restartRecognition = () => {
 	$('#transcript').children().last().removeClass('interim')
+	$('#transcript').scrollTop($('#transcript').height());
 	recognition.start()
 }
 
