@@ -1,3 +1,22 @@
+$("#push").click(function() {
+	console.log("clicked")
+	writeData($("#note-title").text(), $("#transcript").prop('outerHTML'))
+})
+
+//text edit
+
+$('#note-title').click(function() {
+	const range = rangy.createRange()
+	range.selectNodeContents($(this)[0])
+	rangy.getSelection().setSingleRange(range)
+	$(this).removeClass('placeholder')
+})
+
+$('#note-title').keydown(function(e) {
+	if(e.keyCode == 13) {	
+		$(this).blur()
+	}
+})
 //highlight
 
 rangy.init()
@@ -5,12 +24,13 @@ const highlighter = rangy.createHighlighter()
 highlighter.addClassApplier(rangy.createClassApplier('highlight', {
 	ignoreWhiteSpace: true,
 	elementTagName: 'span',	
+	tagNames: ['span'],
 	elementProperties: {
 		onclick: function() {
 			var highlight = highlighter.getHighlightForElement(this)
 			highlighter.removeHighlights( [highlight] )
 		}
-	}	
+	}
 }));
 
 const highlightSelection = () => {
@@ -27,13 +47,10 @@ recognition.interimResults = true
 
 var isFirst = true
 
-// recog
-
-$('#transcript').scroll(() => {
-	$('#white-overlay').show()
-})
+//recog
 
 const restartRecognition = () => {
+	console.log('stopped')
 	$('#transcript').children().last().removeClass('interim')
 	recognition.start()
 }
@@ -71,7 +88,4 @@ recognition.onnomatch = () => {
 recognition.onend = restartRecognition
 recognition.onpause = restartRecognition
 
-$(document).ready(() => {
-	$('#white-overlay').hide()
-	recognition.start()
-})
+recognition.start()
