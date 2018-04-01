@@ -1,2 +1,2 @@
-# hira
-A notebook that listens for you
+# Hira
+The notebook that listens for you.
